@@ -15,6 +15,7 @@ function onLoginFormSub(event) {
     console.log('onFormSubmit -> name', name);
     console.log('onFormSubmit -> value', value);
   });
+
   if (email.value === '' || password.value === '') {
     alert('All fields must be filled');
   } else {
