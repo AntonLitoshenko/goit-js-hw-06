@@ -11,6 +11,10 @@ function onLoginFormSub(event) {
   const formData = new FormData(event.currentTarget);
   console.log(formData);
 
+  formData.forEach((name, value) => {
+    console.log('onFormSubmit -> name', name);
+    console.log('onFormSubmit -> value', value);
+  });
   if (email.value === '' || password.value === '') {
     alert('All fields must be filled');
   } else {
